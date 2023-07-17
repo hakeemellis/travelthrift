@@ -1,0 +1,14 @@
+/*#scaffold{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/inline_image_preview.jpg");
+    background-size: cover; 
+    width: 100%;
+    height: 110%; 
+}*/
+
+
+.scaffold{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/fly.png");
+    background-size: 100%;
+    color: white;
+}
+

@@ -1,0 +1,115 @@
+.navbar-container {
+    max-width: 1150px;
+  }
+
+.background {
+    background-image: url("../images/go.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.hbackground {
+    background-image: url("../images/hotel.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    backdrop-filter: blur(2px);
+}
+
+.fbackground {
+    background-image: url("../images/flight.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    backdrop-filter: blur(2px);
+}
+
+.cbackground {
+    background-image: url("../images/car.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    backdrop-filter: blur(2px);
+}
+
+.background2 {
+    background-image: url("../images/beach.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.backgroundblack {
+    background-color: black;
+    
+}
+
+.checkin {
+    width: 46%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.right {
+    float: right;
+    margin-right: 150px;
+}
+
+.left {
+    margin-left: 150px;
+}
+
+.boxwidth {
+    max-width: 75%;
+}
+
+.flightleft {
+    margin-left: 10px;
+}
+
+.center {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.flightsbar {
+    max-width: 82%;
+    padding: 4px;
+}
+
+
+.hotelbuttonleft {
+    margin-left: -830px;
+}
+
+a {
+    color: black;
+}
+
+.titlefont {
+    font-family: 'Tilt Warp', cursive;
+}
+
+.navsubfont {
+    font-family: 'PT Serif', serif;
+}
+
+div {
+    font-family: 'Roboto', sans-serif;
+}
+
+#upload-progress {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+  }
+  
+
+#account-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
