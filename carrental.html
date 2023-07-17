@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Travel Thrift</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+        <!--FireBase Stuff-->
+        <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-storage.js"></script>
+        <script src="../js/firebaseconfig.js"></script>
+        <script src="../js/firebase.js"></script>
+  </head>
+
+  <header>
+    <br>
+    <br>
+    <center>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-container">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../html/index.html">Travel Thrift</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+
+    <div>
+
+      <div class="collapse navbar-collapse navsubfont" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../html/index.html">Home</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../html/aboutUs.html">About</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../html/hotels.html">Hotels</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../html/flights.html">Flights</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../html/carrental.html">Car Rental</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../html/blog.html">Blog</a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../html/talkToUs.html">Talk to Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <button class="nav-link btn btn-light btn-outline-dark dropdown-toggle" id="account-btn" data-bs-toggle="dropdown" aria-expanded="false">Account</button>
+            <ul class="dropdown-menu" aria-labelledby="account-btn">
+              <li><p class="dropdown-item" id="greeting"></p></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><button class="dropdown-item" id="profile-button">Profile</button></li>
+              <li><a class="dropdown-item" href="../html/login.html">Login</a></li>
+              <li><a class="dropdown-item" href="../html/signup.html">Signup</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="../html/uploadphoto.html">Upload Profile Photo</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><button class="dropdown-item" id="logout-button">Logout</button></li>
+            </ul>
+          </li>
+    
+        </ul>
+    </div>
+   </div>
+  </div>
+ </nav>
+
+  </center>
+  </header>
+  
+  <body class="cbackground">
+   
+    <div>
+  
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div>
+  
+      <center>  
+
+      <div class="form-check form-control-lg d-inline"> 
+
+      <form class="form-check checkin">
+        <input id="pickup-location" type="text" class="form-control form-control-lg rounded-pill" placeholder="Pick-Up Location">
+      </form>
+      
+      <br>
+  
+      <form class="form-check-inline checkin">
+        <input id="pickup-dateandtime" type="datetime-local" class="form-control-lg rounded-pill" placeholder="Pick-Up Date">
+      </form>
+  
+      </div>
+      
+      <br>
+
+      <div class="form control form-control-lg d-inline"> 
+
+        <form class="form-check checkin">
+          <input id="return-location" type="text" class="form-control form-control-lg rounded-pill" placeholder="Drop-Off Location">
+        </form>
+        
+        <br>
+          
+        <form class="form-check-inline checkin">
+          <input type="datetime-local" id="return-dateandtime" class="form-control-lg rounded-pill" placeholder="Drop-Off Date">
+        </form>
+    
+        </div>
+
+      </center>
+  
+      <br>
+      <br>
+      <br>
+      <br>
+  
+        <center>
+        <button id="search-button" type="button" class="btn btn-lg btn-dark">Search</button>
+        </center>
+  
+      </form>
+      
+    
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </center>
+      </div>
+
+  </body>
+
+<script src="../js/main.js"></script>
+<script src="../js/carrentaldetails.js"></script>
+<script src="../js/carrentaldetails1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+
+</html>

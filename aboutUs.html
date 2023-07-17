@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Travel Thrift</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/aboutusBgstyle.css">
+        <!--FireBase Stuff-->
+        <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-storage.js"></script>
+        <script src="../js/firebaseconfig.js"></script>
+        <script src="../js/firebase.js"></script>
+  </head>
+
+  <header>
+    <br>
+    <br>
+    <center>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-container">
+  <div class="container-fluid">
+    <a class="navbar-brand titlefont" href="../html/index.html">Travel Thrift</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+
+    <div>
+
+    <div class="collapse navbar-collapse navsubfont" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../html/index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../html/aboutUs.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../html/hotels.html">Hotels</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../html/flights.html">Flights</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../html/carrental.html">Car Rental</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../html/blog.html">Blog</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../html/talkToUs.html">Talk to Us</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <button class="nav-link btn btn-light btn-outline-dark dropdown-toggle" id="account-btn" data-bs-toggle="dropdown" aria-expanded="false">Account</button>
+          <ul class="dropdown-menu" aria-labelledby="account-btn">
+            <li><p class="dropdown-item" id="greeting"></p></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><button class="dropdown-item" id="profile-button">Profile</button></li>
+            <li><a class="dropdown-item" href="../html/login.html">Login</a></li>
+            <li><a class="dropdown-item" href="../html/signup.html">Signup</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../html/uploadphoto.html">Upload Profile Photo</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><button class="dropdown-item" id="logout-button">Logout</button></li>
+          </ul>
+        </li>
+    
+        </ul>
+    </div>
+   </div>
+  </div>
+ </nav>
+
+  </center>
+  </header>
+
+    <body class="scaffold">
+        <br>
+        <br>
+        <div class="container container-fluid" id="paragraph">
+            <h2 >
+                <b>
+                    ABOUT US
+                </b>
+            </h2>
+    
+            <p id="paragraph">
+                Welcome to our travel page! We're passionate about exploring the world and sharing our experiences with
+                others. Our mission is to inspire and empower travelers to discover new destinations, cultures, and
+                adventures.<br><br>
+                Our team of travel experts has years of experience in the industry and has traveled to countless
+                destinations around the world. We have a deep understanding of what it takes to plan a successful trip,
+                whether you're looking for a romantic getaway, family vacation, or solo adventure.<br><br>
+                At our travel page, we offer a range of resources and services to help you plan your next trip. From
+                destination guides and travel tips to booking tools and personalized trip planning services, were here to
+                make your travel dreams a reality.
+                But we're more than just a travel website. We're a community of travelers who share a love for adventure and
+                a desire to explore the world. We believe that travel has the power to transform lives, and we're committed
+                to making it accessible to everyone. <br><br>
+                Thank you for visiting our travel page. We hope you'll join us on this incredible journey of discovery and
+                adventure. Happy travels!
+            </p>
+
+        </div>
+
+        <div id="boxes-holder" class="d-flex justify-content-around container container-fluid">
+            <div class="col-3">
+                <div class="d-flex justify-content-around">
+
+                    <img id="boxiocn"
+                        src="../icon/Group-icon.png"
+                        alt="" height="80px">
+
+                    <div class="container container-fluid">
+                        <h2>
+                            TOTAL
+                        </h2>
+                        <h2>
+                            1000000 +
+                        </h2>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="d-flex justify-content-around">
+
+                    <img id="boxiocn"
+                        src="../icon/gps+location+map+marker+navigate+navigation+pin+place-1320196166039631125.png"
+                        alt="" height="80px">
+                    <div class="container container-fluid">
+                        <h2>
+                            Cities
+                        </h2>
+                        <h2>
+                            60,000 +
+                        </h2>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="d-flex justify-content-around">
+
+                    <div class="Center-Container">
+                        <img class="Center-Container" id="boxiocn"
+                            src="../icon/country-icon-3.png"
+                            alt="" height="80px">
+                    </div>
+
+                    <div>
+                        <h2>
+                            Countries
+                        </h2>
+                        <h2>
+                            191 +
+                        </h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+</html>
