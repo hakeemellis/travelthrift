@@ -1,6 +1,29 @@
-.navbar-container {
-    max-width: 1150px;
-  }
+/* NavBar Elements */
+
+nav.navbar {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/*                 */
+
+
+/* MOBILE CSS */
+
+@media (max-width:1024px) {
+
+    nav.navbar {
+        width: 83%;
+        margin: auto;
+    }
+
+
+}
+
+
+
+/*             */
 
 .background {
     background-image: url("../images/go.jpg");
