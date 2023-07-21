@@ -1,9 +1,27 @@
-/* NavBar Elements */
+/* NAVBAR ELEMENTS */
+
+/* NavBar */
 
 nav.navbar {
     width: 80%;
     margin: 0 auto;
 }
+
+.custom-btn {  /* to the dropdown in navbar a border */
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    transition: none;
+    outline: none;
+    border-radius: 8px;
+  }
+
+  .custom-btn:hover,
+  .custom-btn:focus,
+  .custom-btn:active {
+    background-color: transparent;
+    color: #000;
+  }
 
 /*                 */
 
@@ -16,6 +34,15 @@ nav.navbar {
         width: 83%;
         margin: auto;
     }
+
+
+
+    .navbar-nav.custom-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px; 
+      }
 
 
 }
