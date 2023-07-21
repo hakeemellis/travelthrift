@@ -25,32 +25,6 @@ nav.navbar {
 
 /*                 */
 
-
-/* MOBILE CSS */
-
-@media (max-width:1024px) {
-
-    nav.navbar {
-        width: 83%;
-        margin: auto;
-    }
-
-
-
-    .navbar-nav.custom-nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px; 
-      }
-
-
-}
-
-
-
-/*             */
-
 .background {
     background-image: url("../images/go.jpg");
     background-size: 100%;
@@ -161,4 +135,30 @@ div {
     background-color: white;
     color: black;
   }
+
+
+
+/* MOBILE CSS */
+
+@media (max-width:1024px) {
+
+    nav.navbar {
+        width: 83%;
+        margin: auto;
+    }
+
+
+    .navbar-nav.custom-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px; 
+      }
+
+
+}
+
+
+
+/*             */
   
