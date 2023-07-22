@@ -1,36 +1,53 @@
 /* NAVBAR ELEMENTS */
 
 /* NavBar */
-
-nav.navbar {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.custom-btn {  /* to the dropdown in navbar a border */
-    border: 1px solid #000;
+.custom-navbar {
     background-color: transparent;
-    color: #000;
-    transition: none;
-    outline: none;
-    border-radius: 8px;
+    border: none;
+    position: absolute;
+    top: 50px; /* Adjust the top value to control the distance from the top of the jumbotron */
+    left: 0;
+    right: 0;
+    z-index: 999;
   }
-
-  .custom-btn:hover,
-  .custom-btn:focus,
-  .custom-btn:active {
-    background-color: transparent;
+  
+  /* Ensure the navbar links are visible by setting their color */
+  .custom-navbar .navbar-nav .nav-link {
     color: #000;
   }
-
-/*                 */
-
-.background {
+  
+  /* If you need to change the color of the active link */
+  .custom-navbar .navbar-nav .nav-link.active {
+    color: #fff; /* Change the color to your preferred one */
+  }
+  
+  /* Adjust the hero banner position */
+  .jumbotron {
     background-image: url("../images/go.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
-}
+    padding: 0;
+    margin-bottom: 0;
+    position: relative;
+    min-height: 100vh; /* Ensure the banner covers at least the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  /* Give some spacing to the content below the hero banner */
+  .content-below-jumbotron {
+    margin-top: 150px; /* Adjust this value to control the spacing between the banner and content below */
+    background-color: #fff; /* Change this color to match your desired background */
+  }
+  
+  /* Make sure the background color of the sections below the navbar is not transparent */
+  .section {
+    background-color: #fff; /* Change this color to match your desired background */
+  }
+  
 
 .hbackground {
     background-image: url("../images/hotel.jpg");
