@@ -5,9 +5,11 @@
     background-color: transparent;
     border: none;
     position: absolute;
-    top: 50px; /* Adjust the top value to control the distance from the top of the jumbotron */
+    top: 50px;
     left: 0;
     right: 0;
+    margin: 0 auto; /* Horizontally center the element */
+    width: 90%; /* Adjust the width as needed */
     z-index: 999;
   }
   
@@ -27,6 +29,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
+    background-position: center;
     padding: 0;
     margin-bottom: 0;
     position: relative;
@@ -161,7 +164,11 @@ div {
 
     nav.navbar {
         width: 83%;
-        margin: auto;
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        
     }
 
 
