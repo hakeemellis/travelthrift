@@ -11,6 +11,7 @@
     margin: 0 auto; /* Horizontally center the element */
     width: 90%; /* Adjust the width as needed */
     z-index: 999;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.614);
   }
   
   /* Ensure the navbar links are visible by setting their color */
