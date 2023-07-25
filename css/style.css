@@ -171,6 +171,10 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.614);
 }
 
+label {
+  display: none;
+}
+
 
   /* FOOTER SECTION */
 
@@ -366,11 +370,10 @@ div {
         align-items: center; 
       }
 
-      
-      
+      label.mobile-only {
+        display: inline-block;
+        color: white;
 
+      }
 
 }
-
-
-  
