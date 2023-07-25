@@ -288,7 +288,9 @@ div {
 
 @media (max-width:1024px) {
 
-    nav.navbar {
+  /* NavBar Elements */  
+  
+  nav.navbar {
         width: 83%;
         display: flex;
         margin: 0 auto;
@@ -297,13 +299,74 @@ div {
         
     }
 
-
     .navbar-nav.custom-nav {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 8px; 
       }
+
+    /* HOTEL PAGE ELEMENTS */
+
+    /* First Page Body */
+
+      .hotel-gap { /* gaps the elements and centers them */
+        display: flex;
+        flex-direction: column;
+        gap: 10vw; 
+        margin: 0 auto;
+        padding: 2vh 0; 
+        justify-content: center; 
+        align-items: center; 
+      }
+    
+      .wide-input {
+        margin-top: 8vh; 
+        width: 80vw; 
+        max-width: 500px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.614);
+      }
+    
+      #countrySelect {
+        margin-top: 4vh;
+        width: 80vw; 
+        max-width: 500px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.614);
+      }
+    
+      .search-btn-gap {
+        width: 60vw; 
+        max-width: 500px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.614);
+      }
+    
+      .checkin {
+        width: 80vw; 
+        padding: 0;
+        border: 0;
+        margin: 0;
+      }
+    
+      .hotel-date1 {
+        width: 60vw; 
+        max-width: 500px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.614);
+        justify-content: center; 
+        align-items: center; 
+        margin-left: 6.5vw;
+      }
+    
+      .hotel-date2 {
+        width: 60vw;
+        max-width: 500px;
+        margin-left: 2vw; 
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.614);
+        justify-content: center; 
+        align-items: center; 
+      }
+
+      
+      
 
 
 }
