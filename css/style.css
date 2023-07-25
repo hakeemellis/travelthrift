@@ -325,6 +325,7 @@ div {
         width: 80vw; 
         max-width: 500px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.614);
+        margin: 0 auto;
       }
     
       #countrySelect {
