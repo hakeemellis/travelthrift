@@ -103,10 +103,19 @@
 
 .hbackground {
     background-image: url("../images/hotel.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
+    background-position: center;
+    padding: 0;
+    margin-bottom: 0;
+    position: relative;
+    min-height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
     backdrop-filter: blur(2px);
+    z-index: 1;
 }
 
 .fbackground {
@@ -213,6 +222,20 @@ div {
     color: black;
   }
 
+
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .center-container > div {
+    text-align: center;
+  }
+  
+  /* Add any other CSS styles as needed */
+  
 
 
 /* MOBILE CSS */
