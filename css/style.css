@@ -371,8 +371,9 @@ div {
       }
 
       label.mobile-only {
-        display: inline-block;
+        display: block;
         color: white;
+        margin: 0 auto;
 
       }
 
