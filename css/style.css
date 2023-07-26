@@ -374,7 +374,7 @@ div {
         display: block;
         color: white;
         margin: 0 auto;
-
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.614);
       }
 
 }
