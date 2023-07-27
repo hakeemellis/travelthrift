@@ -74,94 +74,72 @@
   </header>
   <!--NAVBAR AREA-->
 
-<body class="fbackground">
- 
-  <div>
-  
-    <br>
-    <br>
-    <br>
-	<div class="container container-lg container-fluid border border-2 border-dark bg-body-tertiary flightsbar">
-		<div class="flightleft">
-			<h3 class="d-inline">
+  <body class="fbackground">
+	<div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+		<div class="container-lg">
+		  <div class="border border-2 border-dark bg-body-tertiary">
+			<div>
+			  <h3 class="d-inline">
 				<span class="round-trip-title">Round Trip</span>
 				<span class="pipe-seperator">|</span>
 				<span class="one-way-title"><a href="../html/flights-oneway.html">One Way</a></span>
-			</h3>
-		</div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div>
-
-    <center>  
-
-    <!-- <form class="form-check-inline checkin">
-      <input type="text" class="form-control form-control-lg rounded-pill" placeholder="Going to..">
-    </form> -->
-
-	<form action="flight_search_result.html" class="form-check-inline checkin form">
-		<div class="form-container">
-			<div class="form-check-inline form-inputs-container">
-				<input
-					type="text"
-					name="origin"
-					id="leavingFrom"
-					required
-					class="form-control-lg rounded-pill js-flight-form-input"
-					placeholder="LEAVING FROM (e.g. ATL)" /> &emsp;
-				<input
-					type="text"
-					name="destination"
-					id="goingTo"
-					required
-					class="form-control-lg rounded-pill js-flight-form-input"
-					placeholder="GOING TO (e.g. JFK)" /> &emsp;
-				<input
-					type="date"
-					name="departDate"
-					id="departing"
-					required
-					class="form-control-lg rounded-pill js-flight-form-input"
-					placeholder="DEPARTING DATE" />&emsp;
-				<input
-					type="date"
-					name="returnDate"
-					id="returning"
-					required
-					class="form-control-lg rounded-pill js-flight-form-input"
-					placeholder="RETURNING DATE" /> &emsp;
+			  </h3>
 			</div>
-			
-			
-			<div class="submit-btn-container">
-				<br>
-				<button id="submitFlightFormBtn" type="submit" class="btn btn-lg btn-dark">Search</button> &emsp;
-			</div>
+		  </div>
 		</div>
-	</form>
-    
+	  </div>
   
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    </center>
-    </div>
+	<div class="flight-container-wrapper">
+	  <form action="flight_search_result.html" class="form-check-inline checkin form">
+		  <div class="form-container">
+			<div class="form-check-inline form-inputs-container">
+			  <input
+				type="text"
+				name="origin"
+				id="leavingFrom"
+				required
+				class="form-control-lg rounded-pill js-flight-form-input"
+				placeholder="LEAVING FROM (e.g. ATL)"
+			  />
+			  &emsp;
+			  <input
+				type="text"
+				name="destination"
+				id="goingTo"
+				required
+				class="form-control-lg rounded-pill js-flight-form-input"
+				placeholder="GOING TO (e.g. JFK)"
+			  />
+			  &emsp;
+			  <input
+				type="date"
+				name="departDate"
+				id="departing"
+				required
+				class="form-control-lg rounded-pill js-flight-form-input"
+				placeholder="DEPARTING DATE"
+			  />
+			  &emsp;
+			  <input
+				type="date"
+				name="returnDate"
+				id="returning"
+				required
+				class="form-control-lg rounded-pill js-flight-form-input"
+				placeholder="RETURNING DATE"
+			  />
+			  &emsp;
+			</div>
+	
+			<div class="submit-btn-container">
+			  <button id="submitFlightFormBtn" type="submit" class="btn btn-lg btn-dark">Search</button> &emsp;
+			</div>
+		  </div>
+		</form>
+	  </div>
 
   </body>
+  
 
 <script defer src="../js/flights.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

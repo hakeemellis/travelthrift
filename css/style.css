@@ -176,6 +176,39 @@ label {
 }
 
 
+/* FLIGHTS STARTER PAGE */
+
+.flight-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flightsbar {
+  max-width: 82%;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.fbackground { /* background for flights */
+  background-image: url("../images/flight.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+  padding: 0;
+  margin-bottom: 0;
+  position: relative;
+  min-height: 100vh;  
+  backdrop-filter: blur(2px);
+  z-index: 0;
+  background-position: center;
+}
+
+
   /* FOOTER SECTION */
 
   footer {
@@ -183,13 +216,6 @@ label {
   }
 
 
-.fbackground {
-    background-image: url("../images/flight.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: black;
-    backdrop-filter: blur(2px);
-}
 
 .cbackground {
     background-image: url("../images/car.jpg");
@@ -231,9 +257,6 @@ label {
     max-width: 75%;
 }
 
-.flightleft {
-    margin-left: 10px;
-}
 
 .center {
     margin-top: 0;
@@ -245,6 +268,8 @@ label {
 .flightsbar {
     max-width: 82%;
     padding: 4px;
+    display: flex;
+    justify-content: center;
 }
 
 
