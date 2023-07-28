@@ -190,6 +190,9 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  min-height: 65vh;
+  text-align: center;
 }
 
 
