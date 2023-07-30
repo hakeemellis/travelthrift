@@ -171,7 +171,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.614);
 }
 
-label {
+label { /* Universal Code */
   display: none;
 }
 
@@ -182,18 +182,23 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 ;
+  padding: 0;
 }
 
 .flightsbar {
   max-width: 82%;
   padding: 4px;
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  min-height: 65vh;
+  min-height: 50vh;
   text-align: center;
+  margin-bottom: 0;
+  margin-top: 20px;
+  padding: 0;
+  border: 0;
+  opacity: 79%;
 }
 
 
@@ -210,6 +215,19 @@ label {
   backdrop-filter: blur(2px);
   z-index: 0;
   background-position: center;
+  margin: 0;
+}
+
+.form-inputs-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.submit-btn-container {
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 
@@ -399,11 +417,38 @@ div {
         align-items: center; 
       }
 
-      label.mobile-only {
+      label.mobile-only { /*Universal Code*/
         display: block;
         color: white;
         margin: 0 auto;
-        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.614);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.214);
+      }
+
+
+      /* FLIGHTS PAGE ELEMENTS */
+
+      /* First Page Body */
+
+      .flightsbar {
+        max-width: 82%;
+        padding: 4px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        min-height: 46.1vh;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 20px;
+        padding: 0;
+        border: 0;
+      }
+
+      #departing {
+        margin-right: 2vh;
+      }
+
+      #returning {
+        margin-right: 3vh;
       }
 
 }
