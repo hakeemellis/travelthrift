@@ -231,6 +231,43 @@ label { /* Universal Code */
 }
 
 
+/* CAR RENTALS STARTER PAGE */
+
+  /*First Page*/
+
+  .cbackground {
+    background-image: url("../images/car.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    padding: 0;
+    margin-bottom: 0;
+    position: relative;
+    min-height: 100vh;  
+    backdrop-filter: blur(2px);
+    z-index: 0;
+    background-position: center;
+    margin: 0;
+}
+
+.car-container-wrapper { /*to adjust form height so it doesn't clash with nav*/
+  margin-top: 20px; 
+  position: relative;
+  top: 230px; 
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+.car-container-wrapper form {
+  margin-bottom: 8px;
+}
+
+
+
   /* FOOTER SECTION */
 
   footer {
@@ -238,14 +275,6 @@ label { /* Universal Code */
   }
 
 
-
-.cbackground {
-    background-image: url("../images/car.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: black;
-    backdrop-filter: blur(2px);
-}
 
 .background2 {
     padding: 0;
