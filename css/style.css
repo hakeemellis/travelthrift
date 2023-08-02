@@ -25,6 +25,11 @@
     color: #f21111; 
   }
 
+  .dropdown-item.active {
+    color: #f21111;
+    background-color: transparent;
+  }
+
 
 /* HOME PAGE BODY */
 
@@ -102,6 +107,12 @@
     margin-top: 30vh;
   }
 
+
+/* SIGNUP PAGE */
+
+.signup-container {
+  margin-top: 20vh;
+}
 
 
 /* HOTEL STARTER PAGE */
