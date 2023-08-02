@@ -32,26 +32,26 @@
   
   /* Main Hero Banner */
 
-  .jumbotron {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: black;
-    background-position: center;
-    padding: 0;
-    margin-bottom: 0;
-    position: relative;
-    min-height: 100vh;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-  }
+    .jumbotron {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: black;
+      background-position: center;
+      padding: 0;
+      margin-bottom: 0;
+      position: relative;
+      min-height: 100vh;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
 
-  /* To separate background from the jumbotron element */
-  .jumbotron.background {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.614);
-    background-image: url("../images/go.jpg");
-  }
+    /* To separate background from the jumbotron element */
+    .jumbotron.background {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.614);
+      background-image: url("../images/go.jpg");
+    }
   
   /* Second Hero Banner */
 
@@ -93,6 +93,13 @@
 
   #choice1 {
     background-color: rgba(255, 255, 255, 0.8); /* Translucent white background */
+  }
+
+
+/* LOGIN PAGE */
+
+  .login-container {
+    margin-top: 30vh;
   }
 
 
@@ -385,6 +392,13 @@ div {
         align-items: center;
         gap: 8px; 
       }
+
+  /* LOGIN PAGE */
+
+  .login-container {
+    margin-top: 10vh;
+  }
+
 
     /* HOTEL PAGE ELEMENTS */
 
