@@ -194,6 +194,16 @@ label { /* Universal Code */
 }
 
 
+/* HOTEL SEARCH RESULT PAGE */
+
+.hotel-search-container {
+  margin-top: 17vh;
+}
+
+.dead-center { /*use when you want something dead-center*/
+  margin: 0 auto;
+}
+
 /* FLIGHTS STARTER PAGE */
 
 .flight-container-wrapper {
