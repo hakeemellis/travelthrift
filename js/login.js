@@ -32,7 +32,7 @@ loginBtn.addEventListener("click", (e) => {
       userRef.get().then((doc) => {
         if (doc.exists) {
           console.log("User document data:", doc.data());
-          window.location.href = "../html/index.html"; // redirect to home page
+          window.location.href = "index.html"; // redirect to home page
         } else {
           // user document doesn't exist
           console.log("User document doesn't exist");

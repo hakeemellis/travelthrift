@@ -65,7 +65,7 @@ if (signupBtn) {
         })
         .then(() => {
           console.log("User document created");
-          window.location.href = "../html/login.html"; // redirect to login page
+          window.location.href = "login.html"; // redirect to login page
         })
         .catch((error) => {
           console.log(error.code);
@@ -149,7 +149,7 @@ loginBtn.addEventListener("click", (e) => {
       userRef.get().then((doc) => {
         if (doc.exists) {
           console.log("User document data:", doc.data());
-          window.location.href = "../html/index.html"; // redirect to home page
+          window.location.href = "index.html"; // redirect to home page
         } else {
           // user document doesn't exist
           console.log("User document doesn't exist");
@@ -181,14 +181,14 @@ logoutBtn.addEventListener("click", (e) => {
       // user is logged in, so log them out
       firebase.auth().signOut().then(() => {
         console.log("User logged out successfully");
-        window.location.href = "../html/logout.html"; // redirect to login page
+        window.location.href = "logout.html"; // redirect to login page
       }).catch((error) => {
         console.log(error.code);
         console.log(error.message);
       });
     } else {
       // user is not logged in, so redirect them to login page
-      window.location.href = "../html/login.html";
+      window.location.href = "login.html";
     }
   });
 });

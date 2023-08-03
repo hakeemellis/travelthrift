@@ -18,14 +18,14 @@ logoutBtn.addEventListener("click", (e) => {
       // user is logged in, so log them out
       firebase.auth().signOut().then(() => {
         console.log("User logged out successfully");
-        window.location.href = "../html/logout.html"; // redirect to login page
+        window.location.href = "logout.html"; // redirect to login page
       }).catch((error) => {
         console.log(error.code);
         console.log(error.message);
       });
     } else {
       // user is not logged in, so redirect them to login page
-      window.location.href = "../html/login.html";
+      window.location.href = "login.html";
     }
   });
 });
