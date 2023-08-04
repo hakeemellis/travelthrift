@@ -35,7 +35,7 @@ signupBtn.addEventListener("click", (e) => {
       })
       .then(() => {
         console.log("User document created");
-        window.location.href = "../html/login.html"; // redirect to login page
+        window.location.href = "login.html"; // redirect to login page
       })
       .catch((error) => {
         console.log(error.code);
