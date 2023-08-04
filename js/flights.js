@@ -15,5 +15,5 @@ function submitRequest(event) {
 	window.name = JSON.stringify(searchData);
 
 	// redirect user to search result page
-	location.href = 'http://127.0.0.1:5500/html/flight_search_result.html';
+	location.href = 'flight_search_result.html';
 }
