@@ -204,6 +204,44 @@ label { /* Universal Code */
   margin: 0 auto;
 }
 
+/* HOTEL DETAILED RESULT PAGE */
+
+/* CSS for the hotel details page */
+
+
+.hotel-info img {
+  max-width: 100%; /* Ensure images don't exceed the container width */
+}
+
+
+.img-fluid { /* Ensure images are responsive */
+  width: 100%;
+  height: auto;
+}
+
+
+.hotel-info .container-lg { /* Add gap between images */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  padding: 0;
+}
+
+
+.container-lg {
+  padding: 0;
+}
+
+
+.hotel-info h2 {
+  margin-top: 1rem;
+}
+
+.hotel-info p {
+  margin-bottom: 1rem;
+}
+
+
 /* FLIGHTS STARTER PAGE */
 
 .flight-container-wrapper {

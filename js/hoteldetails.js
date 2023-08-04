@@ -96,7 +96,7 @@ async function loadHotelDetails() {
       </div>
       <br>
       <br>
-      <a href="../html/hotelsearchresults.html">
+      <a href="hotelsearchresults.html">
       <button type="button" class="btn btn-lg btn-dark rounded-pill hotelbuttonleft">Back to Search</button></a>
     </div>
   `;
