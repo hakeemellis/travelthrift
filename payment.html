@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MacLove | Payment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="shortcut icon" href="../images/ML.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<header>
+<a href="../html/paymentplans.html">
+  <button type="button" class="btn btn-danger">Back To Payment<button></a>
+</header>
+
+<body class="paymentbody">
+    <div class="paymentrow">
+        <div class="paymentcol-75">
+            <h2 id="payment">Payment</h2>
+            <p id="subpayment">Choose payment method below</p>
+        </div>
+    </div>    
+<div class="paymentrow">
+  <div class="paymentcol-75">
+    <div class="paymentcontainer">
+      <form class="needs validation" action="../html/paymentsuccess.html">
+        <div class="paymentrow">
+            <div class="paymentcol-50">
+                <img class="paymentimg" src="../images/creditcard.png" alt="creditcard">
+            </div>
+        </div> 
+      
+        <div class="paymentrow">
+          <div class="paymentcol-50 bill">
+            <h3>Billing Info</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input class="paymentinput" type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input class="paymentinput" type="text" id="email" name="email" placeholder="john@example.com" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input class="paymentinput" type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input class="paymentinput" type="text" id="city" name="city" placeholder="Toronto" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+
+            <div class="paymentrow">
+              <div class="paymentcol-50">
+                <label for="state">State</label>
+                <input class="paymentinput" type="text" id="state" name="state" placeholder="ON" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="paymentcol-50">
+                <label for="zip">Zip</label>
+                <input class="paymentinput" type="text" id="zip" name="zip" placeholder="M00010" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="paymentcol-50 credit">
+            <h3>Credit Card Info</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="paymenticon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input class="paymentinput" type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+            <label for="ccnum">Credit card number</label>
+            <input class="paymentinput" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+            <label for="expmonth">Exp Month</label>
+            <input class="paymentinput" type="text" id="expmonth" name="expmonth" placeholder="September" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+            <div class="row">
+              <div class="paymentcol-50">
+                <label for="expyear">Exp Year</label>
+                <input class="paymentinput" type="text" id="expyear" name="expyear" placeholder="2018" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="paymentcol-50">
+                <label for="cvv">CVV</label>
+                <input class="paymentinput" type="text" id="cvv" name="cvv" placeholder="352" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <input type="submit" value="Continue to checkout" class="btn btn-danger">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+<script src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</html>

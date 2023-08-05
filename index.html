@@ -1,136 +1,117 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
-  <!--STARTER ELEMENTS-->
-  <head>
-    <title>Travel Thrift</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <!--FireBase Stuff-->
-    <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.1.0/firebase-storage.js"></script>
-    <script src="js/firebaseconfig.js"></script>
-    <script src="js/firebase.js"></script>
-    <!--For Font Awesome GIF-->
-    <script src="https://kit.fontawesome.com/0520afe110.js" crossorigin="anonymous"></script>
-  </head>
-  <!--STARTER ELEMENTS-->
+    <head>
+        <title>Home | MacLove</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="shortcut icon" href="images/ML.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto&family=Roboto+Condensed&family=Shalimar&family=Teko:wght@600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    </head>
 
-  <!--NAVBAR AREA-->
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
-      <div class="container">
-        <a class="navbar-brand titlefont" href="index.html">Travel Thrift</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navsubfont custom-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutUs.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="hotels.html">Hotels</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="flights.html">Flights</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="carrental.html">Car Rentals</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Talk to Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <button class="nav-link dropdown-toggle custom-btn" type="button" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                Account
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><p class="dropdown-item" id="greeting"></p></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><button class="dropdown-item" id="profile-button">Profile</button></li>
-              <li><a class="dropdown-item" href="login.html">Login</a></li>
-              <li><a class="dropdown-item" href="signup.html">Signup</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="uploadphoto.html">Upload Profile Photo</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><button class="dropdown-item" id="logout-button">Logout</button></li>
-              </ul>
-            </li>                                 
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navbar-deadcenter">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"> <img src="images/MacLove.png" width="145"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active home" aria-current="page" href="index.html"></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle service" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item service1" href="howitworks.html"></a></li>
+                  <li><a class="dropdown-item service2" href="machelp.html"></a></li>
+                  <li><a class="dropdown-item service3" href="paymentplans.html"></a></li>
+                  <li><a class="dropdown-item service4" href="login.html"></a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle us" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item choose" href="whychooseus.html"></a></li>
+                  <li><a class="dropdown-item testimonials" href="testimonials.html"></a></li>
+                  <li><a class="dropdown-item oteam" href="ourteam.html"></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active contact" href="contactus.html"></a>
+              </li>
+              <li class="nav-item">
+                <a href="account.html"><button type="button" class="btn btn-outline-dark btn-lg account"></button></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-  </header>
-  <!--NAVBAR AREA-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-  
-  <!--MAIN AREA-->
-  <body>
-   
-    <div class="jumbotron jumbotron-fluid background text-center d-flex align-items-center">
-      <div class="container">
-        <a href="#choice">
-          <button type="button" class="btn btn-lg btn-dark">Let's Go</button>
-        </a>
+    <body>
+     <div class="container roboto">
+        <p class="h3"></p>
+        <h1 class="arial"></h1>
+        <br>
+        <div class="wraptext" style="line-height:50%">
+        <p id="indexbody"></p>
+        </div>
+        <br>
+        <a href="signup.html">
+        <button type="button" class="btn btn-danger btn-lg register"></button></a>
+        &nbsp; &nbsp;
+        <a href="login.html">
+        <button type="button" class="btn btn-outline-secondary btn-lg signin" style="color:#800020"></button></a>
+        <div class="">
+            <!--<img src="images/Laptop1.png" width="800" height="500" class="macphoto">-->
+            </div>
+     </div>
+     <br>
+     <br>
+     <br>
+     <div class="preloader-wrapper">
+      <div class="spinner-grow text-danger" style="width: 3rem;height: 3rem;">
+          <span class="visually-hidden">Loading...</span>
       </div>
     </div>
+    </body>
 
-    <div class="jumbotron jumbotron-fluid background2 text-center d-flex align-items-center">
-      <video class="video-background" autoplay loop muted playsinline>
-        <source src="images/travel1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video> 
-    
-      <div class="overlay"></div>
-      <div class="dropdown">
-        <form id="choice" class="form form-control form-control-lg border border-dark boxwidth dropdown-toggle"
-          data-bs-toggle="dropdown" aria-expanded="false">Category</form>
-        <ul id="choice1" class="dropdown-menu">
-          <li><a class="dropdown-item" href="hotels.html">Hotels</a></li>
-          <li><a class="dropdown-item" href="flights.html">Flights</a></li>
-          <li><a class="dropdown-item" href="carrental.html">Car Rentals</a></li>
-        </ul>
-      </div>
-    </div>
-    
+    <br>
+    <br>
+    <br>
 
-  </body>
-  <!--MAIN AREA-->
+    <footer>
+        <center>
+        <p class="footertextsize fcontact">
+        </p>
+        <a href="https://facebook.com/">
+        <img src="images/facebook.svg" width="25" height="25"></a>
+        &emsp;
+        <a href="https://linkedin.com/">
+        <img src="images/linkedin.svg" width="25" height="25"></a>
+        &emsp;
+        <a href="https://twitter.com/">
+        <img src="images/twitter.svg" width="24" height="24"></a>
+        </center>
+    </footer>
 
-
-  <!--FOOTER AREA-->
-  <footer class="hero-banner bg-dark text-white py-sm-2">
-    <div class="container text-center">
-      <div class="social-icons m-0">
-        <a href="https://www.linkedin.com/in/hakeem-ellis/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
-        &nbsp;
-        <a href="https://github.com/hakeemellis" target="_blank" class="social-icon"><i class="fa-brands fa-square-github fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
-      </div>
-      <p class="footer-text m-0"><b>All rights reserved &copy; 2023 Hakeem Ellis</b></p>
-    </div>
-  </footer>
-  <!--FOOTER AREA-->
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-
-
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 </html>

@@ -1,0 +1,435 @@
+/*Hakeem CSS */
+
+.navbar-deadcenter {
+  border: none;
+  position: absolute;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.199);
+}
+
+.navbar-nav {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.nav-item .btn.account {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 50px; 
+}
+
+.preloader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .15s ease;
+}
+
+.fade-out-animation {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.macphoto {
+    margin-left: 35%;
+    bottom: 15%;
+    position: absolute;
+}
+
+.subnav {
+    overflow: hidden;
+}
+
+.subnavcontent {
+    display: none;
+    position: absolute;
+}
+
+.footertextsize {
+    font-size: 16px;
+}
+
+.wraptext {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.roboto {
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Imaginary Table*/
+th {
+    font-size: 20px;
+}
+
+ /*
+.btn-stylings {
+    color: #ffffff;
+    background-color: #800020;
+    border-color: #800020;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+ 
+  .btn-stylings:hover,
+  .btn-stylings:active,
+  .btn-stylings:focus,
+  .btn-stylings.active {
+    background: #800020;
+    color: #ffffff;
+    border-color: #800020;
+  }*/
+
+  .gradient-custom {
+    
+    background: #000000;
+  }
+
+  /* Sona CSS */
+  .header {
+          
+    height: 170px;
+    text-shadow: 1px 1px;
+}
+
+.p2{
+    text-align: center;
+}
+
+.h1{text-align:center}
+
+.h6{
+    text-align:center;
+}
+
+.footer{
+    text-align:center;
+    height:30%
+}
+
+.column3 {
+text-align: center;
+float: left;
+width: 33%;
+padding: 8px;
+height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row1:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.column2 {
+text-align: center;
+float: left;
+width: 33%;
+padding: 8px;
+height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row2:after {
+content: "";
+display: table;
+clear: both;
+}   
+
+video{
+  width: 60%;
+  height: 30%;
+    }
+
+.vid{
+text-align: center;
+} 
+
+/*Abdul CSS */
+
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #001fac;
+    box-sizing: border-box;
+    }
+    .ul {
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+      list-style: none;
+      align-items: center;
+      color: black;
+
+    }
+    .li {
+      margin: 0 20px 0 20px;
+      padding: 2px;
+    }
+    #logo {
+      margin-right: auto;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      height: auto;
+      border-radius: 300px;
+    }
+    #top_right_nav {
+      margin-left: auto;
+    }
+    .section {
+      background-image: url("abstract_bkg.jpg");
+      
+    }
+   .page_top {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 20%;
+    align-items: center;
+  }
+  #choose {
+  font-size: 42px;
+  color:#A72F2F;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  }
+
+  .p {
+    font-size: 17px;
+  }
+  .plans {
+    font-size: 24px;
+  }
+  .span, .plans {
+    font-weight: 500;
+  }
+  .price {
+  font-size: 36px;
+  }
+  #price_basic {
+  color:#A72F2F;
+  }
+  #price_standard {
+    color:  white;
+  }
+  #price_premium {
+    color: #A72F2F;
+  }
+ 
+  .choose_plan, .promo_txt, .sub_button {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+  }
+  .cards {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .plan_cards,.plan_cards2 {
+    box-shadow: 5px 5px 10px grey;
+    width: 250px;
+    height: auto;
+    line-height: 35px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .plan_cards{
+    background-color: #E6E6E6;
+    color: #080808;
+  }
+  .plan_cards2{
+    background-color: #A72F2F;
+    color: white;
+  }
+  .img, .basic, .standard, .premium {
+    width: 100%;
+  }
+
+  .img {
+    border-radius: 10px 10px 0 0;
+  }
+  .btn{
+    padding: 20px;
+  }
+  .hr{
+    width: 80%;
+  }
+  .button {
+    height: 40px;
+    width: 75%;
+    font-family: cursive;
+    
+  }
+  #btn_basic,#btn_premium {
+  background-color: #A72F2F;
+  color: #f9f9f9;
+  border: none;
+  }
+  #btn_standard {
+    background-color: white;
+    color: #A72F2F;
+    border: none;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: light;
+    color: white;
+    background-color: #A72F2F;
+  }
+
+  /* next part, payment */
+
+  .paymentbody {
+    background-color: black;
+    color:white;
+    font-family: Arial;
+    font-size: 17px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  #payment, #subpayment{
+    display: block;
+    text-align: center;
+  }
+  .paymentimg{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+    border: white;
+    border-radius: 3px;
+  }
+  
+  .paymentrow {    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .paymentcol-25 {
+    flex: 25%;
+  }
+  
+  .paymentcol-50 {
+    flex: 50%;
+  }
+  
+  .paymentcol-75 {
+    flex: 75%;
+  }
+  
+  .paymentcol-25,
+  .paymentcol-50,
+  .paymentcol-75 {
+    padding: 0 16px;
+  }
+  
+  .paymentcontainer {
+    background-color: black;
+    padding: 5px 20px 15px 20px;
+    color: #7F7F7F;
+    
+  }
+  .bill{
+    padding-right:40px
+  }
+  .credit{
+    padding-left: 40px;
+  }
+
+  .paymentinput[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .paymentlabel {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .paymenticon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .paymentbtn {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: solid #A72F2F 2px;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .paymentbtn:hover {
+    background-color: #A72F2F;
+  }
+  
+  .paymenta {
+    color: #2196F3;
+  }
+  
+  .paymenthr {
+    border: 1px solid lightgrey;
+  }
+  
+  .paymentspan.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .paymentrow {
+      flex-direction: column-reverse;
+    }
+    .paymentcol-25 {
+      margin-bottom: 20px;
+    }
+  }
+
