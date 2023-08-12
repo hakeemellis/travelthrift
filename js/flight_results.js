@@ -1,3 +1,15 @@
+  // Copyright Notice //
+  console.log(`
+  Copyright (c) 2023 Hakeem Ellis
+  All rights reserved.
+
+  This work is licensed under the terms of the Custom Code license.
+  For a copy, see https://github.com/hakeemellis/portfolio/blob/main/LICENSE.md.
+
+  Contact: utilize the contact form at https://hakeemellis.com/
+  `);
+
+
 const REQUEST_OPTIONS = {
 	method: 'GET',
 	headers: {
@@ -62,3 +74,4 @@ function updateDOM(airports) {
 		document.getElementById('flightsList').insertAdjacentHTML('beforeend', flightDetialsCardComponent);
 	}
 }
+
